@@ -1,4 +1,7 @@
-body {background-color: red;}
+body            {
+                    background-color: url("img/gradietnbg.png");
+                    background-repeat: repeat-x;
+                }
             
             h1  {
                     color: antiquewhite;
