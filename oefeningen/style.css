@@ -1,14 +1,42 @@
-body {background-color: red;}
-            
-            h1  {
-                    color: antiquewhite;
-                    font-size:30px;
-                    text-align:center;
-                }
-            
-            h2,ul,adress  {
-                    color:antiquewhite;
-                    font-size:20px;
-                    text-align:left;
-                }
-            p    {color: antiquewhite;}
+body {
+    background-image: url("https://raw.githubusercontent.com/RalphCuizon/MI1-2018-2019-/master/oefeningen/img/gradietnbg.png");
+    background-repeat: repeat-x;
+    padding-bottom: 20000px;
+}
+
+h1 {
+    color: navy;
+    font-size: 30px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+h2,
+ul,
+address {
+    color: navy;
+    font-size: 20px;
+    text-align: left;
+}
+
+p {
+    color: navy;
+    
+}
+
+h2 {
+    width:25%;
+    border-left: 6px solid red;
+    background-color: antiquewhite;
+}
+
+address {
+    box-sizing: border-box;
+    width: 140px;
+    padding: 5px;
+    border: 5px solid antiquewhite;
+    margin:0;
+}
+a.home{
+    position: sticky;
+}
