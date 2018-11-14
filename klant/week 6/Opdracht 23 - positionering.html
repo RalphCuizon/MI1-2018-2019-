@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <title>CSS Positionering</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: blue;
+            padding: 15px;
+            text-align: left;
+            font-size: 15px;
+            color: white;
+        }
+        
+        nav.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0px;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: center;
+            /* only for demonstration, should be removed */
+            background: red;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        .active {
+            background-color: black;
+        }
+
+        
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 50%;
+            background-color: #f1f1f1;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        
+        aside {
+            background-color: grey;
+            float: right;
+            width: 50%;
+            height: 300px;
+            text-align: center;
+        }
+
+
+     
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+            
+        }
+           /* Style the footer */
+        footer {
+            background-color: green;
+            padding: 15px ;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>HEADER</h2>
+    </header>
+
+    <nav class="sticky">
+        <ul >
+
+            <li><a href="#">NAV3</a></li>
+            <li><a href="#">NAV2</a></li>
+            <li><a href="#" class=
+                   "active">NAV1</a></li>
+        </ul>
+    </nav>
+    <article>
+
+        <h1>ARTICLE</h1>
+        <section>
+            <h1>SECTION</h1>
+            <p>paragraph.</p>
+
+        </section>
+
+        
+    </article>
+    <aside>
+        <h1>ASIDE</h1>
+    </aside>
+    <footer style="padding-bottom:2000px">
+        <p>FOOTER</p>
+    </footer>
+
+</body>
+
+</html>
