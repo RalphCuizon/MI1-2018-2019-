@@ -15,12 +15,16 @@ header {
     color: black;
 }
 
+.titel, .logo {
+    float: left;
+    padding: 10px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: green;
 }
 
 li {
@@ -32,12 +36,27 @@ li a {
     color: black;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
-    background-color: grey;
+    text-decoration: none;   
 }
 
 li a:hover {
-    
+    background-color: gainsboro;    
+}
+
+.active {
+    background-color: gray;
+}
+
+header.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+.logo {
+    float:center;
+    filter: grayscale(100%);
+    width: 70px;
 }
 body {
     height:10000px;
