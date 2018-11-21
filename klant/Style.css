@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: white;
+    padding: 18px;
+    border-bottom: 3px solid black;
+    text-align: left;
+    font-family: "Trebuchet MS", sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: grey;
+}
+
+li a:hover {
+    
+}
+body {
+    height:10000px;
+}
