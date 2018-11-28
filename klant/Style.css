@@ -5,22 +5,24 @@
 
 header {
     background-color: white;
-    padding: 18px;
-    border-bottom: 3px solid black;
-    text-align: left;
+    padding: 5px;
     font-family: "Trebuchet MS", sans-serif;
     font-style: italic;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
+    text-align: center;
 }
 
-.titel, .logo {
-    float: left;
-    padding: 10px;
+.titel {
+    background-color: white;
 }
-
-ul {
+nav {
+    border-bottom: 3px solid black;
+    background-color: white;
+}
+nav ul {
+    background-color: white;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -32,7 +34,8 @@ li {
 }
 
 li a {
-    display: inline-block;
+    background-color: white;
+    display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -47,7 +50,7 @@ li a:hover {
     background-color: gray;
 }
 
-header.sticky {
+nav.sticky {
     position: -webkit-sticky;
     position: sticky;
     top:0;
