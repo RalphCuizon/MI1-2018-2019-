@@ -12,10 +12,12 @@ header {
     font-size: 18px;
     color: black;
     text-align: center;
+    clear:both;
 }
 
-.titel {
+h1 {
     background-color: white;
+    clear:both;
 }
 nav {
     border-bottom: 3px solid black;
@@ -33,7 +35,7 @@ li {
     float: right;
 }
 
-li a {
+nav ul li a {
     background-color: white;
     display: block;
     color: black;
@@ -57,9 +59,9 @@ nav.sticky {
 }
 
 .logo {
-    float:center;
+    float:left;
     filter: grayscale(100%);
-    width: 70px;
+    
 }
 body {
     height:10000px;

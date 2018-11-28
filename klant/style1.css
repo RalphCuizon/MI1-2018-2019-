@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+nav ul {
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    background-color: white;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;   
+}
+
+nav ul li {
+    border: 1px solid darkgray;
+}
+
+nav div:first-child {
+    background:white;
+}
+
+nav div:first-child h1{
+    line-height: 0;
+    text-align: center;
+    background: white;
+    margin:0;
+}
+nav div:first-child img{
+    
+    filter: grayscale(100%);
+    
+}
