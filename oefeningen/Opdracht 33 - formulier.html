@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <title>Opdracht 33 - Formulier</title>
+</head>
+
+<body>
+
+
+
+    <form action="/action_page.php" target="_blank" method="post" oninput="resultaat.value=parseInt(punt.value)">
+        <fieldset>
+            <legend>Personeel Informatie:</legend>
+
+            <label for="voornaam">Voornaam</label>
+            <input type="text" name="voornaam"><br>
+
+            <label for="achternaam">Achternaam</label>
+            <input type="text" name="achternaam"><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email"><br>
+
+            <label for="man">Man</label>
+            <input type="radio" name="geslacht" id="man" value="man"><br>
+            <label for="vrouw">Vrouw</label>
+            <input type="radio" name="geslacht" id="vrouw" value="vrouw"><br>
+
+            <input type="date" name="bday" value="1997-06-28"><br><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Favorite vakken</legend>
+
+            <select name="vakken" size="10" multiple>
+                <option value="Information management 1">Information management 1</option>
+                <option value="Software Engineering 1">Software Engineering 1</option>
+                <option value="	Application Development 1"> Application Development 1</option>
+                <option value="Database Development 1">Database Development 1</option>
+                <option value="Mobile & Internet 1">Mobile & Internet 1</option>
+                <option value="System Management 1">System Management 1</option>
+                <option value="Network Management 1">Network Management 1</option>
+                <option value="ICT Business Projects & Trends 1">ICT Business Projects & Trends 1</option>
+                <option value="Communicatietraining 1">Communicatietraining 1</option>
+                <option value="Communicatietraining 2">Communicatietraining 2</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Beoogde punten MI1</legend>
+
+            <input type="range" list="tickmarks">
+
+            <datalist id="tickmarks">
+                <option value="0" label="10">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50" label="15">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90">
+                <option value="100" label="20">
+            </datalist><br><br>
+
+            0
+            <input type="range" id="punt" name="punt" max="20" value="10">
+            20=
+            <output name="resultaat" for="punt "></output>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Leukste dagen van de week</legend>
+            
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
