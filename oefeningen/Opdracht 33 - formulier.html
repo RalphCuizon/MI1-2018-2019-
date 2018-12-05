@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
+<style>
+    input[type=text], textarea, email:focus {
+  background-color: green;
+}
+</style>
 <head>
     <title>Opdracht 33 - Formulier</title>
 </head>
@@ -8,21 +13,21 @@
 
 
 
-    <form action="/action_page.php" target="_blank" method="post" oninput="resultaat.value=parseInt(punt.value)">
+    <form enctype="text/plain" action="mailto:ralphr.cuizon@gmail.com" target="_blank" method="post" oninput="resultaat.value=parseInt(punt.value)">
         <fieldset>
             <legend>Personeel Informatie:</legend>
 
             <label for="voornaam">Voornaam</label>
-            <input type="text" name="voornaam"><br>
+            <input type="text" name="voornaam" required><br>
 
             <label for="achternaam">Achternaam</label>
-            <input type="text" name="achternaam"><br>
+            <input type="text" name="achternaam" required><br>
 
             <label for="email">Email</label>
-            <input type="email" name="email"><br>
+            <input type="email" name="email" required><br>
 
             <label for="man">Man</label>
-            <input type="radio" name="geslacht" id="man" value="man"><br>
+            <input type="radio" name="geslacht" id="man" value="man" required><br>
             <label for="vrouw">Vrouw</label>
             <input type="radio" name="geslacht" id="vrouw" value="vrouw"><br>
 
@@ -74,10 +79,24 @@
 
         <fieldset>
             <legend>Leukste dagen van de week</legend>
-            
+
+            <input type="checkbox" name="maandag" value="maandag">Maandag<br>
+            <input type="checkbox" name="dinsdag" value="dinsdag">Dinsdag<br>
+            <input type="checkbox" name="woensdag" value="woensdag">Woensdag<br>
+            <input type="checkbox" name="donderdag" value="donderdag">Donderdag<br>
+            <input type="checkbox" name="vrijdag" value="vrijdag">Vrijdag<br>
+            <input type="checkbox" name="zaterdag" value="zaterdag">Zaterdag<br>
+            <input type="checkbox" name="zondag" value="zondag">Zondag<br><br>
         </fieldset>
 
-        <input type="submit" value="Submit">
+        <fieldset>
+            <legend>Opmerkingen</legend>
+
+            <textarea name="opmerkingen" rows="10" cols="30">
+
+</textarea>
+        </fieldset>
+        <input type="submit" value="Send">
     </form>
 
 </body>
