@@ -2,13 +2,28 @@
     box-sizing: border-box;
     background-color: whitesmoke;
 }
+header {
+    background-color: white;
+    padding:5px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    
+}
 
+h1 {
+    background-color: white;
+}
 nav ul {
     background-color: white;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: "Trebuchet MS", sans-serif;
 }
 
 nav ul li a {
@@ -16,7 +31,7 @@ nav ul li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 40px;
     text-decoration: none;   
 }
 
@@ -29,13 +44,65 @@ nav div:first-child {
 }
 
 nav div:first-child h1{
-    line-height: 0;
     text-align: center;
     background: white;
     margin:0;
+    padding:0;
 }
 nav div:first-child img{
     
     filter: grayscale(100%);
     
+}
+
+ nav ul li a:hover{
+        background: grey;
+        color:white;
+        
+    }
+.active {
+    background-color: black;
+    color:white;
+}
+
+@media only screen and (min-width:700px) {
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        align-items:center;
+        padding:10px;
+        border-bottom: 3px solid darkgrey;
+    }
+    
+    nav ul {
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    nav div:first-child h1 {
+        margin-left: 5px;
+    }
+    nav ul li {
+        border      : none;
+    }
+    
+    nav ul li a:hover{
+        background: grey;
+        color:white;
+        
+    }
+    
+    nav.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+
+}
+    body {
+    height:10000px;
+}
+
 }
