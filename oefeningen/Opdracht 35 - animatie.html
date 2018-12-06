@@ -1,44 +1,196 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  position: relative;
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-  animation-name: example;
-  animation-duration: 4s;
-  animation-delay: 2s;
-}
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            -webkit-animation-name: redsquare;
+            /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s;
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-}
+            /* Safari 4.0 - 8.0 */
+            animation-name: redsquare;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
 
-/* Standard syntax */
-@keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-}
-</style>
+        img {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            -webkit-animation-name: supreme;
+            /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s;
+            4.0 - 8.0 */ -webkit-animation-direction: alternate;
+            /* Safari
+
+            /* Safari 4.0 - 8.0 */
+            animation-name: supreme;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes redsquare {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        /* Standard syntax */
+        @keyframes redsquare {
+            0% {
+
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes supreme {
+            0% {
+                -ms-transform: rotate(90deg);
+                /* IE 9 */
+                -webkit-transform: rotate(90deg);
+                /* Safari */
+                transform: rotate(90deg);
+                /* Standard syntax */
+                left: 100px;
+                top: 0px;
+            }
+
+            25% {
+                  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(180deg); /* Standard syntax */
+                left: 300px;
+                top: 0px;
+            }
+
+            50% {
+                 -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Safari */
+  transform: rotate(270deg); /* Standard syntax */
+                left: 300px;
+                top: 200px;
+            }
+
+            75% {
+                 -ms-transform: rotate(360deg); /* IE 9 */
+  -webkit-transform: rotate(360deg); /* Safari */
+  transform: rotate(360deg); /* Standard syntax */
+                left: 100px;
+                top: 200px;
+            }
+
+            100% {
+                 -ms-transform: rotate(470deg); /* IE 9 */
+  -webkit-transform: rotate(470deg); /* Safari */
+  transform: rotate(470deg); /* Standard syntax */
+                left: 100px;
+                top: 0px;
+            }
+        }
+
+        /* Standard syntax */
+        @keyframes supreme {
+            0% {
+                  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg); /* Standard syntax */
+                left: 100px;
+                top: 0px;
+            }
+
+            25% {
+                        -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(180deg); /* Standard syntax */
+                left: 300px;
+                top: 0px;
+            }
+
+            50% {
+                        -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Safari */
+  transform: rotate(270deg); /* Standard syntax */
+                left: 300px;
+                top: 200px;
+            }
+
+            75% {
+                   -ms-transform: rotate(360deg); /* IE 9 */
+  -webkit-transform: rotate(360deg); /* Safari */
+  transform: rotate(360deg); /* Standard syntax */
+                left: 100px;
+                top: 200px;
+            }
+
+            100% {
+                   -ms-transform: rotate(450deg); /* IE 9 */
+  -webkit-transform: rotate(450deg); /* Safari */
+  transform: rotate(450deg); /* Standard syntax */
+                left: 100px;
+                top: 0px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
 
-<div></div>
+    <div></div>
+    <img src="https://raw.githubusercontent.com/RalphCuizon/MI1-2018-2019-/master/oefeningen/img/animatie.png" alt="Supreme">
 
 </body>
 </html>
