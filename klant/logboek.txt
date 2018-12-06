@@ -2,3 +2,4 @@ Logboek "Mîr Café"
 
 21/11/2018:	Nav bar in Header.
 05/12/2018: nav en header gemaakt.
+maken van een slider ahv css
