@@ -15,6 +15,20 @@ header {
     
 }
 
+ .map, h2, .googlemap {
+    background-color: white;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bolder;
+    
+}
+.googlemap {
+    float: left;
+}
+.tekstmap {
+    background-color: white;
+}
+
+
 h1 {
     background-color: white;
 }
@@ -140,24 +154,38 @@ slide:nth-child(4) {
         align-items:center;
         padding:10px;
         border-bottom: 3px solid darkgrey;
+        
     }
     
     nav ul {
         display:flex;
         align-items: center;
         flex-wrap: wrap;
+        
+        
+        
     }
     
     nav div:first-child h1 {
         margin-left: 5px;
     }
     nav ul li {
-        border      : none;
+        border: none;
+        
+        
     }
     
+    nav ul li a {
+        width:120px;
+        -webkit-transition: width 5s, -webkit-transform 2s; /* Safari */
+  transition: width 5s, transform 5s;
+    }
     nav ul li a:hover{
         background: grey;
         color:white;
+        width : 150px;
+        
+        
         
     }
     
