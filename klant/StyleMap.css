@@ -73,9 +73,23 @@ nav div:first-child img {
 }
 
 /* Stijl van de main "Map" */
-.googlemap {
+.map-flex-container {
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    align-content: center;
+    width: 90%;
+    justify-content: center;
+    align-text: center;
+}
+iframe {
+    
+
+    height: 500px;
+}
+.googlemap {
+
+   
+    
 }
 /* Stijl op grote scherm */
 @media only screen and (min-width:700px) {
