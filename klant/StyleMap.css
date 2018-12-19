@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+< !-- Stijl van de mobile versie -- >
+
+/* Stijl van de body */
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bolder;
+    background-color: white;
+}
+
+/* Stijl van de header */
+header {
+    background-color: white;
+    padding: 5px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+
+}
+
+/* Style van de titel in de header en de logo in de nav */
+h1 {
+    background-color: white;
+}
+
+/* Stijl van de menu in de navigatiebar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    border: 1px solid darkgray;
+}
+
+nav ul li a {
+    background-color: white;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: grey;
+    color: white;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+/* Stijl van de logo in nav */
+nav div:first-child h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav div:first-child img {
+    filter: grayscale(100%);
+}
+
+/* Stijl van de main "Map" */
+.googlemap {
+    background-color: white;
+    align-content: center;
+}
+/* Stijl op grote scherm */
+@media only screen and (min-width:700px) {
+
+    /* Stijl van de nav */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        align-items: center;
+        /*padding:10px;*/
+        border-bottom: 3px solid darkgrey;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        border: none;
+    }
+
+/* een kleine transitie op de menu van nav */
+    nav ul li a {
+        width: 120px;
+        -webkit-transition: width 1s, -webkit-transform 2s;
+        /* Safari */
+        transition: width 1s, transform 2s;
+    }
+
+    nav ul li a:hover {
+        width: 150px;
+    }
+
+    nav.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+
+    }
+
+}
