@@ -7,6 +7,15 @@
 
 /* Stijl van de body */
 body {
+    background-color: white;
+}
+
+/* Lettertype van de pagina */
+header,
+h1,
+h2,
+h3,
+p {
     font-family: "Trebuchet MS", sans-serif;
     font-weight: bolder;
     background-color: white;
@@ -16,18 +25,27 @@ body {
 header {
     background-color: white;
     padding: 5px;
-    font-family: "Trebuchet MS", sans-serif;
     font-style: italic;
-    font-weight: bolder;
     font-size: 15px;
     color: black;
     text-align: center;
-
 }
 
 /* Style van de titel in de header en de logo in de nav */
 h1 {
     background-color: white;
+}
+
+/* Stijl van de subtitel */
+h2 {
+    text-align: center;
+    background-color: white;
+    margin: 2%
+}
+
+/* Stijl van de paragraaf */
+p {
+    font-weight: normal;
 }
 
 /* Stijl van de menu in de navigatiebar */
@@ -72,25 +90,34 @@ nav div:first-child img {
     filter: grayscale(100%);
 }
 
-/* Stijl van de main "Map" */
+/* Stijl van de main "mapmain" */
 .map-flex-container {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 90%;
-    justify-content: center;
-    align-text: center;
+    text-align: center;
 }
-iframe {
-    
 
-    height: 500px;
-}
 .googlemap {
-
-   
-    
+    height: 500px;
+    width: 90%;
 }
+
+.sectiongooglemap {
+    padding: 1%;
+    border: 3px solid black;
+    margin: 20px;
+    background-color: white;
+}
+
+.tekstmap {
+    margin: 20px;
+    padding: 1%;
+    border: 3px solid black;
+    background-color: white;
+
+}
+
 /* Stijl op grote scherm */
 @media only screen and (min-width:700px) {
 
@@ -101,7 +128,7 @@ iframe {
         background: white;
         align-items: center;
         /*padding:10px;*/
-        border-bottom: 3px solid darkgrey;
+        border-bottom: 3px solid black;
     }
 
     nav ul {
@@ -114,7 +141,7 @@ iframe {
         border: none;
     }
 
-/* een kleine transitie op de menu van nav */
+    /* een kleine transitie op de menu van nav */
     nav ul li a {
         width: 120px;
         -webkit-transition: width 1s, -webkit-transform 2s;
@@ -130,6 +157,34 @@ iframe {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
+
+    }
+
+    /* Stijl van de main "mapmain" */
+    .map-flex-container {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        justify-content:center;
+    }
+
+    .googlemap {
+        height: 500px;
+        width: 90%;
+    }
+
+    .sectiongooglemap {
+        padding: 1%;
+        border: 3px solid black;
+        margin: 20px;
+        background-color: white;
+    }
+
+    .tekstmap {
+        margin: 20px;
+        padding: 1%;
+        border: 3px solid black;
+        background-color: white;
 
     }
 
