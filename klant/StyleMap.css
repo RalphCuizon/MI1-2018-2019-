@@ -40,7 +40,7 @@ h1 {
 h2 {
     text-align: center;
     background-color: white;
-    margin: 2%
+    margin: 2%;
 }
 
 /* Stijl van de paragraaf */
@@ -90,6 +90,41 @@ nav div:first-child img {
     filter: grayscale(100%);
 }
 
+/* Stijl van de div "menuresponsive" */
+
+div.menu {
+    border: 3px solid black;
+    margin: 5%;
+}
+
+.menuresponsive {
+    width: 100%;
+}
+
+div.menu img {
+    width: 100%;
+    height: auto;
+}
+
+div.menu:hover {
+    border: 3px solid grey;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.imgnieuwitems {
+    color:black;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 /* Stijl van de main "contactmain" */
 .contactsection {
     text-align: center;
@@ -133,7 +168,6 @@ nav div:first-child img {
     padding: 1%;
     border: 3px solid black;
     background-color: white;
-
 }
 
 /* Stijl op de footer */
@@ -147,6 +181,17 @@ footer {
 }
 
 /* Stijl op grote scherm */
+@media only screen and (min-width:500px) {
+
+    /* Stijl van de div "menuresponsive" */
+    .menuresponsive {
+        width: 49.99999%;
+        float: left;
+    }
+
+}
+
+/* Stijl op grootste scherm */
 @media only screen and (min-width:700px) {
 
     /* Stijl van de nav */
@@ -185,21 +230,24 @@ footer {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
+    }
 
+    /* Stijl van de div "menuresponsive" */
+    .menuresponsive {
+        padding: 6px;
+        float: left;
+        width: 24.99999%;
     }
 
     /* Stijl van de main "contactmain" */
     .contactsection {
         padding: 20px;
         overflow: auto;
-
     }
-
 
     .contactlist {
         list-style-type: none;
         padding: 0;
-
     }
 
     .voorkantimg {
@@ -207,5 +255,4 @@ footer {
         height: 30%;
         float: left;
     }
-
 }
