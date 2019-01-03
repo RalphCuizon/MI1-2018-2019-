@@ -125,6 +125,45 @@ div.menu:hover {
     text-align: center;
 }
 
+/* Stijl van de formulier */
+input[type=text], select, textarea, input[type=email], input[type=number], input[type=date] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+label {
+    padding: 10px 10px 10px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   float: right;
+}
+
+.reservatiecontainer {
+    padding: 20px;
+}
+
+
+.kol-25, .kol-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+}
+
+
+
+
+
+
 /* Stijl van de main "contactmain" */
 .contactsection {
     text-align: center;
@@ -208,22 +247,24 @@ footer {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        
     }
 
     nav ul li {
         border: none;
+        
     }
 
     /* een kleine transitie op de menu van nav */
     nav ul li a {
-        width: 120px;
+        width: 125px;
         -webkit-transition: width 1s, -webkit-transform 2s;
         /* Safari */
         transition: width 1s, transform 2s;
     }
 
     nav ul li a:hover {
-        width: 150px;
+        width: 140px;
     }
 
     nav.sticky {
@@ -238,7 +279,27 @@ footer {
         float: left;
         width: 24.99999%;
     }
+    
+/* Stijl van de formulier */
+    
+   
 
+    .kol-25 {
+        float: left;
+        width: 25%;
+        margin-top: 5px;
+    }
+    
+     .kol-75 {
+        float: left;
+        width: 75%;
+        margin-top: 5px;
+    }
+ .rij:after {
+    content: "";
+    display: table;
+    clear: both;
+}
     /* Stijl van de main "contactmain" */
     .contactsection {
         padding: 20px;
