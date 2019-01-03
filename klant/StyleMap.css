@@ -105,8 +105,9 @@ nav div:first-child img {
 }
 
 .voorkantimg {
-    width:90%;
+    width: 90%;
 }
+
 /* Stijl van de main "mapmain" */
 .map-flex-container {
     display: flex;
@@ -148,10 +149,6 @@ footer {
 /* Stijl op grote scherm */
 @media only screen and (min-width:700px) {
 
-    h2 {
-        padding: 1
-    }
-
     /* Stijl van de nav */
     nav {
         display: flex;
@@ -191,5 +188,24 @@ footer {
 
     }
 
+    /* Stijl van de main "contactmain" */
+    .contactsection {
+        padding: 20px;
+        overflow: auto;
+
+    }
+
+
+    .contactlist {
+        list-style-type: none;
+        padding: 0;
+
+    }
+
+    .voorkantimg {
+        width: 60%;
+        height: 30%;
+        float: left;
+    }
 
 }
