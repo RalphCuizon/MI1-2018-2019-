@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: white;
+    padding: 5px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    clear:both;
+}
+
+h1 {
+    background-color: white;
+    clear:both;
+}
+nav {
+    border-bottom: 3px solid black;
+    background-color: white;
+}
+nav ul {
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+nav ul li a {
+    background-color: white;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;   
+}
+
+li a:hover {
+    background-color: gainsboro;    
+}
+
+.active {
+    background-color: gray;
+}
+
+nav.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+.logo {
+    float:left;
+    filter: grayscale(100%);
+    
+}
+body {
+    height:10000px;
+}
