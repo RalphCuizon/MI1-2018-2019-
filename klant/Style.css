@@ -34,7 +34,7 @@ header {
 header div {
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
 }
 
 /* Style van de titel in de header en de logo in de nav */
@@ -113,7 +113,7 @@ Dit is niet goed voor anysurfer, want de afbeeldingen bewegen. De reden daarvoor
 .slider figure img {
     width: 25%;
     float: left;
-    height: 300px;   
+    height: 300px;
     border: 20px;
     padding: 20px;
     border: 3px solid black;
@@ -246,6 +246,7 @@ input[type=submit] {
 .contactlist {
     list-style-type: none;
     padding: 0;
+    overflow: auto;
 }
 
 .voorkantimg {
@@ -303,6 +304,12 @@ footer {
         height: 400px;
     }
 
+    /* Stijl van de main "contactmain" */
+    .voorkantimg {
+        width: 90%;
+        height: 40%;
+    }
+
 }
 
 /* Stijl op grootste scherm */
@@ -347,7 +354,7 @@ footer {
         position: sticky;
         top: 0;
     }
-    
+
     /* Stijl van de slider */
     .slider figure img {
         height: 500px;
@@ -361,9 +368,6 @@ footer {
     }
 
     /* Stijl van de formulier */
-
-
-
     .kol-25 {
         float: left;
         width: 25%;
